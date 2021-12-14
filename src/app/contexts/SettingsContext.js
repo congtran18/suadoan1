@@ -2,16 +2,16 @@ import React, { createContext, useState } from 'react'
 
 import { merge } from 'lodash'
 
-import { MatxLayoutSettings } from 'app/components/MatxLayout/settings'
+import { AdminLayoutSettings } from 'app/components/AdminLayout/settings'
 
 const SettingsContext = createContext({
-    settings: MatxLayoutSettings,
+    settings: AdminLayoutSettings,
     updateSettings: () => {},
 })
 
 export const SettingsProvider = ({ settings, children }) => {
     const [currentSettings, setCurrentSettings] = useState(
-        settings || MatxLayoutSettings
+        settings || AdminLayoutSettings
     )
 
     const handleUpdateSettings = (update = {}) => {

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Scrollbar from 'react-perfect-scrollbar'
 import { navigations } from 'app/navigations'
-import { MatxVerticalNav } from 'app/components'
+import { AdminVerticalNav } from 'app/components'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 import useSettings from 'app/hooks/useSettings'
@@ -53,7 +53,7 @@ const Sidenav = ({ children }) => {
                 className={clsx('relative px-4', classes.scrollable)}
             >
                 {children}
-                <MatxVerticalNav items={navigations} />
+                <AdminVerticalNav items={navigations} />
             </Scrollbar>
 
             <div

@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useReducer } from 'react'
 import jwtDecode from 'jwt-decode'
 import axios from 'axios.js'
-import { MatxLoading } from 'app/components'
+import { AdminLoading } from 'app/components'
 
 const initialState = {
     isAuthenticated: false,
@@ -165,7 +165,7 @@ export const AuthProvider = ({ children }) => {
     }, [])
 
     if (!state.isInitialised) {
-        return <MatxLoading />
+        return <AdminLoading />
     }
 
     return (

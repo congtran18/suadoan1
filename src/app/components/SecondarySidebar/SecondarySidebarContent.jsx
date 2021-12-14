@@ -1,6 +1,6 @@
 import React from 'react'
 import { IconButton, Icon } from '@material-ui/core'
-import MatxCustomizer from '../MatxCustomizer/MatxCustomizer'
+import AdminCustomizer from '../AdminCustomizer/AdminCustomizer'
 import ShoppingCart from '../ShoppingCart/ShoppingCart'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
@@ -47,7 +47,7 @@ const SecondarySidebarContent = () => {
         <div className={clsx('secondary-sidebar', classes.root)}>
             <span className="m-auto"></span>
 
-            <MatxCustomizer />
+            <AdminCustomizer />
 
             <ShoppingCart />
 

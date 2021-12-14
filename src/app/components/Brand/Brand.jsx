@@ -1,5 +1,5 @@
 import React from 'react'
-import { MatxLogo } from 'app/components'
+import { AdminLogo } from 'app/components'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 import useSettings from 'app/hooks/useSettings'
@@ -11,6 +11,9 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
     hideOnCompact: {
         display: 'none',
     },
+    text: {
+        padding: '30px'
+    }
 }))
 
 const Brand = ({ children }) => {
@@ -23,16 +26,18 @@ const Brand = ({ children }) => {
         <div
             className={clsx('flex items-center justify-between', classes.brand)}
         >
-            <div className="flex items-center">
-                <MatxLogo />
-                <span
+            <div>
+                <div
                     className={clsx({
-                        'text-18 ml-2 font-medium sidenavHoverShow': true,
+                        'text-30 mr-3 font-medium sidenavHoverShow': true,
                         [classes.hideOnCompact]: mode === 'compact',
                     })}
                 >
-                    Matx
-                </span>
+                    Thời trang nam nữ
+                </div>  
+            </div>
+            <div>
+                <AdminLogo />
             </div>
             <div
                 className={clsx({

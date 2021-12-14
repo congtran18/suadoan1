@@ -1,7 +1,7 @@
 import React from 'react'
 import SecondarySidebarToggle from './SecondarySidebarToggle'
 import SecondarySidebarContent from './SecondarySidebarContent'
-import SecondarySidenavTheme from '../MatxTheme/SecondarySidenavTheme/SecondarySidenavTheme'
+import SecondarySidenavTheme from '../AdminTheme/SecondarySidenavTheme/SecondarySidenavTheme'
 import useSettings from 'app/hooks/useSettings'
 
 const SecondarySidebar = () => {

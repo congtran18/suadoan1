@@ -23,9 +23,9 @@ const StatCards = () => {
                     <div className="flex items-center">
                         <Icon className={classes.icon}>group</Icon>
                         <div className="ml-3">
-                            <small className="text-muted">New Leads</small>
+                            <big className="text-muted">Số người dùng</big>
                             <h6 className="m-0 mt-1 text-primary font-medium">
-                                3050
+                                8888
                             </h6>
                         </div>
                     </div>
@@ -44,11 +44,11 @@ const StatCards = () => {
                     <div className="flex items-center">
                         <Icon className={classes.icon}>attach_money</Icon>
                         <div className="ml-3">
-                            <small className="text-muted line-height-1">
-                                This week Sales
-                            </small>
+                            <big className="text-muted line-height-1">
+                                Doanh thu
+                            </big>
                             <h6 className="m-0 mt-1 text-primary font-medium">
-                                $80,500
+                                $80,500,800
                             </h6>
                         </div>
                     </div>
@@ -67,11 +67,11 @@ const StatCards = () => {
                     <div className="flex items-center">
                         <Icon className={classes.icon}>store</Icon>
                         <div className="ml-3">
-                            <small className="text-muted">
-                                Inventory Status
-                            </small>
+                            <big className="text-muted">
+                                Số nhân viên
+                            </big>
                             <h6 className="m-0 mt-1 text-primary font-medium">
-                                8.5% Stock Surplus
+                                10
                             </h6>
                         </div>
                     </div>
@@ -90,11 +90,11 @@ const StatCards = () => {
                     <div className="flex items-center">
                         <Icon className={classes.icon}>shopping_cart</Icon>
                         <div className="ml-3">
-                            <small className="text-muted">
-                                Orders to deliver
-                            </small>
+                            <big className="text-muted">
+                                Số hoá đơn
+                            </big>
                             <h6 className="m-0 mt-1 text-primary font-medium">
-                                305 Orders
+                                3054 hoá đơn
                             </h6>
                         </div>
                     </div>

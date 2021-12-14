@@ -51,12 +51,12 @@ const SecondarySidebarToggle = () => {
                 <Fab
                     // variant="extended"
                     // size="small"
-                    color="primary"
+                    color="secondary"
                     aria-label="expand"
                     className=""
                     onClick={toggle}
                 >
-                    <Icon>settings</Icon>
+                    <Icon className="m-0 text-200">add</Icon>
                 </Fab>
             )}
         </div>

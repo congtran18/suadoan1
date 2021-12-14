@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider, makeStyles, useTheme } from '@material-ui/core/styles'
-import { Button, Toolbar, AppBar } from '@material-ui/core'
+import { Toolbar, AppBar } from '@material-ui/core'
 import clsx from 'clsx'
 import useSettings from 'app/hooks/useSettings'
 
@@ -22,6 +22,12 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
     },
     appbar: {
         zIndex: 96,
+        background: '#d32f2f',
+    },
+    itemText: {
+        fontSize: '1.2rem',
+        paddingLeft: '40%',
+        // textAlignVertical: "center"
     },
 }))
 
@@ -40,26 +46,12 @@ const Footer = () => {
                 className={classes.appbar}
             >
                 <Toolbar className={clsx('flex items-center', classes.footer)}>
-                    <div className="flex items-center container w-full">
-                        {/* <a
-              href="https://github.com/uilibrary/matx-react"
-              target="_blank"
-              className="mr-2"
-              rel="noopener noreferrer"
-            >
-              <Button variant="contained">Download Free version</Button>
-            </a> */}
-                        <a href="https://ui-lib.com/downloads/matx-pro-react-admin/">
-                            <Button variant="contained" color="secondary">
-                                Get MatX Pro
-                            </Button>
-                        </a>
-                        <span className="m-auto"></span>
-                        <p className="m-0">
-                            Design and Developed by{' '}
-                            <a href="http://ui-lib.com">UI Lib</a>
-                        </p>
-                    </div>
+                        {/* <span className="m-auto"></span> */}
+                        <span className={clsx('', classes.itemText
+                        )}>
+                            Quản lí
+                            <a href="http://ui-lib.com"> web thời trang nam nữ</a>
+                        </span>
                 </Toolbar>
             </AppBar>
         </ThemeProvider>
